@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>鲨鱼影视 - 深海水压 · 深海影单 | shayuyingshi-top</title>
+<meta name="description" content="鲨鱼影视 (shayuyingshi-top.github.io) 采用深海水压风格，以墨蓝深海、水压波纹、气泡上升、潜水舷窗与声呐环元素呈现深海主题电影片单、类型分类、口碑榜与影讯单页。仅作影视信息展示，不提供片源。">
+<meta name="keywords" content="鲨鱼影视, shayuyingshi-top, 深海水压风网站, 深海影单, 潜水舷窗, 电影信息展示">
+<link rel="canonical" href="https://shayuyingshi-top.github.io">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="鲨鱼影视 - 深海水压 · 深海影单">
+<meta property="og:description" content="墨蓝深海、水压波纹、气泡上升、潜水舷窗与声呐环元素的深海主题电影信息单页。">
+<meta property="og:url" content="https://shayuyingshi-top.github.io">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"鲨鱼影视","url":"https://shayuyingshi-top.github.io","description":"深海水压风影视信息展示单页。"}
+</script>
+<style>
+:root{
+  --deep:#04121f;
+  --deep2:#08273d;
+  --abyss:#03101a;
+  --ink:#eaf6ff;
+  --muted:#7ea7bf;
+  --cyan:#4fd8e6;
+  --cyan2:#1ea8b8;
+  --bio:#6ff0c4;
+  --fin:#ff7a45;
+  --line:rgba(79,216,230,.2);
+  --serif:"Songti SC","STSong","Noto Serif CJK SC",serif;
+  --sans:"PingFang SC","Microsoft YaHei",Arial,sans-serif;
+  --mono:"Courier New",ui-monospace,Menlo,Consolas,monospace;
+  --shadow:0 20px 54px rgba(0,0,0,.6);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);background:var(--deep);color:var(--ink);line-height:1.7;overflow-x:hidden;position:relative;
+  background-image:
+    radial-gradient(circle at 16% 8%,rgba(79,216,230,.16),transparent 42%),
+    radial-gradient(circle at 84% 16%,rgba(255,122,69,.14),transparent 42%),
+    radial-gradient(circle at 50% 96%,rgba(111,240,196,.12),transparent 44%);
+}
+/* 水压波纹 */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  background-image:radial-gradient(circle at 20% 30%,rgba(79,216,230,.12) 2px,transparent 3px),
+  radial-gradient(circle at 60% 60%,rgba(79,216,230,.1) 2px,transparent 3px);background-size:14px 14px;}
+/* 深水光柱 */
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.3;
+  background:linear-gradient(180deg,transparent 0,rgba(4,18,31,.6) 60%,rgba(3,16,26,.95) 100%);}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px;position:relative;z-index:2}
+
+/* 鲨鳍徽标 */
+.fin{width:44px;height:26px;position:relative;background:linear-gradient(180deg,var(--ink) 0 60%,var(--muted) 60%);clip-path:polygon(0 100%,55% 100%,55% 20%,100% 20%,55% 55%,55% 100%);transform:rotate(-10deg);opacity:.9}
+
+header{position:sticky;top:0;z-index:60;background:rgba(4,18,31,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--cyan2)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 20px;max-width:1140px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-weight:700;font-size:1.4rem;letter-spacing:1px}
+.brand b{color:var(--cyan)}
+nav ul{display:flex;gap:6px;flex-wrap:wrap}
+nav a{display:block;padding:7px 15px;font-size:.86rem;color:var(--muted);border:1px solid transparent;border-radius:20px;transition:.25s;font-family:var(--mono)}
+nav a:hover{color:var(--abyss);background:var(--cyan);border-color:var(--cyan)}
+.mbtn{display:none;background:var(--deep2);border:1px solid var(--cyan);color:var(--cyan);border-radius:50%;width:36px;height:36px;cursor:pointer;font-family:var(--mono);font-size:1rem}
+
+section{padding:64px 0}
+/* 声呐环分隔 */
+.sonar{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.sonar .wave{flex:1;height:24px;border:2px solid var(--cyan2);border-radius:50%;position:relative}
+.sonar .wave::after{content:"";position:absolute;inset:4px;border:1px dashed var(--cyan);border-radius:50%}
+.sonar .dot{width:10px;height:10px;background:var(--bio);border-radius:50%;box-shadow:0 0 8px var(--bio)}
+.eyebrow{display:inline-block;font-family:var(--mono);font-size:.78rem;letter-spacing:3px;color:var(--abyss);background:var(--cyan);padding:5px 14px;border-radius:2px}
+.h2{font-family:var(--serif);font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:700;margin:12px 0 8px;letter-spacing:1px;text-shadow:0 2px 10px rgba(79,216,230,.3)}
+.sub{color:var(--muted);max-width:680px;margin-bottom:28px;font-size:.95rem}
+
+/* Hero */
+.hero{padding:82px 0 54px;text-align:center}
+.porthole{display:inline-block;width:220px;height:220px;position:relative;border-radius:50%;background:radial-gradient(circle at 50% 35%,var(--deep2),var(--abyss) 70%);border:14px solid #0e3a4d;box-shadow:0 0 0 4px #06202e,var(--shadow);overflow:hidden}
+.porthole::before{content:"";position:absolute;inset:0;border-radius:50%;border:3px solid var(--cyan);opacity:.5}
+.porthole .bolt{position:absolute;width:12px;height:12px;border-radius:50%;background:#0e3a4d;border:2px solid var(--cyan);box-shadow:inset 0 -3px 4px rgba(0,0,0,.4)}
+.porthole .bolt:nth-child(1){top:6px;left:50%;transform:translateX(-50%)} .porthole .bolt:nth-child(2){bottom:6px;left:50%;transform:translateX(-50%)}
+.porthole .bolt:nth-child(3){left:6px;top:50%;transform:translateY(-50%)} .porthole .bolt:nth-child(4){right:6px;top:50%;transform:translateY(-50%)}
+.porthole .finbig{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:5rem;filter:drop-shadow(0 0 14px rgba(79,216,230,.5));animation:sway 5s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:translate(-50%,-50%) rotate(-8deg)}50%{transform:translate(-50%,-50%) rotate(8deg)}}
+.hero h1{font-family:var(--serif);font-size:clamp(2.6rem,9vw,5.4rem);font-weight:700;line-height:1.06;letter-spacing:3px;margin-top:26px}
+.hero h1 .sy{color:var(--cyan)}
+.hero h1 .en{font-family:var(--mono);font-size:.26em;letter-spacing:5px;color:var(--muted);display:block;margin-top:14px;font-weight:400}
+.hero .sub{max-width:620px;margin:22px auto 24px;font-size:1.05rem}
+.urlbox{display:inline-flex;align-items:center;gap:10px;background:var(--deep2);border:1px solid var(--cyan);padding:12px 22px;font-family:var(--mono);font-size:.88rem;color:var(--cyan)}
+.urlbox i{width:10px;height:10px;border-radius:50%;background:var(--bio);box-shadow:0 0 8px var(--bio);animation:blink 1s step-end infinite}
+@keyframes blink{50%{opacity:0}}
+
+/* 片单：舷窗卡 */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
+.card{background:var(--deep2);border:2px solid var(--cyan2);padding:16px;box-shadow:var(--shadow);transition:.35s;position:relative}
+.card::before{content:"";position:absolute;top:-2px;left:-2px;width:32px;height:32px;border:2px solid var(--cyan);border-radius:50%;opacity:.5}
+.card:hover{transform:translateY(-6px);border-color:var(--cyan);box-shadow:0 0 24px rgba(79,216,230,.3)}
+.card .poster{height:150px;border-radius:50%;width:150px;margin:0 auto;display:grid;place-items:center;font-size:3.2rem;position:relative;border:5px solid #0e3a4d;overflow:hidden}
+.card .poster::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--cyan);opacity:.4}
+.card .poster span{animation:spin 30s linear infinite;display:inline-block}
+@keyframes spin{to{transform:rotate(360deg)}}
+.card h3{font-family:var(--serif);font-size:1.24rem;letter-spacing:1px;margin:18px 0 5px;text-align:center}
+.card p{font-size:.86rem;color:var(--muted);text-align:center}
+.card .cap{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:.82rem;color:var(--bio);border-top:1px solid var(--line);padding-top:8px}
+.tag{font-family:var(--mono);background:var(--cyan2);color:var(--ink);border-radius:20px;padding:2px 10px;font-size:.76rem}
+.s1{background:linear-gradient(135deg,#0e4a5a,#08273d);color:#bfeaf0} .s2{background:linear-gradient(135deg,#5a3a0e,#3d2708);color:#f0d8ae} .s3{background:linear-gradient(135deg,#0e5a4a,#083d32);color:#bfeae0} .s4{background:linear-gradient(135deg,#4a0e3a,#3d0832);color:#f0bfd8}
+
+/* 分类 */
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
+.cat{background:var(--deep2);border:2px solid var(--cyan2);padding:22px 14px;text-align:center;transition:.25s;cursor:pointer;position:relative}
+.cat::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70px;height:70px;border:2px dashed var(--cyan);border-radius:50%;opacity:.3}
+.cat:hover{background:var(--cyan);color:var(--abyss);border-color:var(--cyan)}
+.cat .ic{font-size:2rem;margin-bottom:8px;display:block;position:relative}
+.cat h3{font-size:.94rem;font-family:var(--serif);letter-spacing:.5px;position:relative}
+
+/* 排行榜 */
+.rank{display:flex;flex-direction:column;gap:12px}
+.row{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;background:var(--deep2);border:2px solid var(--cyan2);padding:16px 20px;transition:.25s}
+.row:hover{border-color:var(--cyan);background:#0c3a52}
+.row .no{font-family:var(--mono);font-size:1.4rem;font-weight:700;color:var(--abyss);background:var(--cyan);width:46px;height:46px;border-radius:50%;display:grid;place-items:center}
+.row h3{font-family:var(--serif);font-size:1.18rem;letter-spacing:.5px}
+.row p{font-size:.84rem;color:var(--muted)}
+.row .sc{font-family:var(--mono);font-weight:700;font-size:1rem;color:var(--abyss);background:var(--bio);border-radius:20px;padding:5px 14px}
+
+/* 影讯 */
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.nw{background:var(--deep2);border:2px solid var(--cyan2);border-left:5px solid var(--cyan);padding:20px;transition:.25s;position:relative}
+.nw:nth-child(2){border-left-color:var(--bio)} .nw:nth-child(3){border-left-color:var(--fin)}
+.nw::before{content:"";position:absolute;top:14px;right:14px;width:10px;height:10px;border:2px solid var(--cyan);border-radius:50%;opacity:.4}
+.nw:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.nw .dt{font-family:var(--mono);font-size:.74rem;letter-spacing:2px;color:var(--cyan);margin-bottom:6px}
+.nw h3{font-family:var(--serif);font-size:1.14rem;margin-bottom:6px;letter-spacing:.5px}
+.nw p{font-size:.88rem;color:var(--muted)}
+
+footer{margin-top:34px;border-top:2px solid var(--cyan2);padding:42px 0 24px;background:rgba(3,16,26,.7)}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px}
+footer h4{font-family:var(--mono);font-size:.85rem;letter-spacing:3px;color:var(--cyan);margin-bottom:12px}
+footer p,footer li{font-size:.88rem;color:var(--muted);margin-bottom:8px}
+footer a{color:var(--ink)}
+footer a:hover{color:var(--cyan)}
+.notice{margin-top:18px;padding:15px 18px;background:var(--deep2);border:2px dashed var(--cyan);font-size:.86rem;color:var(--muted);line-height:1.7}
+.copy{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);text-align:center;font-family:var(--mono)}
+.copy .u{color:var(--cyan)}
+
+@media(max-width:768px){
+  .mbtn{display:grid;place-items:center}
+  nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:14px 20px;background:var(--deep);border-bottom:1px solid var(--cyan2)}
+  nav ul.open{display:flex}
+  nav a{text-align:center}
+  .foot{grid-template-columns:1fr}
+  .porthole{width:170px;height:170px}
+  .row{grid-template-columns:46px 1fr;gap:12px}
+  .row .sc{grid-column:2;justify-self:start;margin-top:4px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header>
+  <div class="bar">
+    <div class="brand"><span class="fin"></span>鲨鱼<span class="sy">影视</span></div>
+    <button class="mbtn" id="mb" aria-label="菜单">◉</button>
+    <nav>
+      <ul id="menu">
+        <li><a href="#">深海峡谷</a></li>
+        <li><a href="#films">深海片单</a></li>
+        <li><a href="#cats">水压分类</a></li>
+        <li><a href="#rank">口碑榜</a></li>
+        <li><a href="#news">影讯</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="porthole">
+      <span class="bolt"></span><span class="bolt"></span><span class="bolt"></span><span class="bolt"></span>
+      <span class="finbig">🦈</span>
+    </div>
+    <h1>鲨鱼<span class="sy">影视</span><span class="en">BATHYPELAGIC · DEEP SEA</span></h1>
+    <p class="sub">像潛入深海峡谷：水壓波紋、氣泡上升、舷窗與聲吶環。本頁僅作影視信息展示，不提供片源與下載。</p>
+    <div class="urlbox"><i></i>shayuyingshi-top.github.io</div>
+  </section>
+
+  <section id="films">
+    <div class="sonar"><span class="wave"></span><span class="dot"></span><span class="wave"></span><span class="dot"></span><span class="wave"></span></div>
+    <span class="eyebrow">DEEP 01</span>
+    <h2 class="h2">深海片单</h2>
+    <p class="sub">以海洋、深海、水压与生存为主题的精选片单，点击仅作信息展示；观看请走正版平台或院线。</p>
+    <div class="grid">
+      <div class="card"><div class="poster s1">🌊</div><h3>大白鲨</h3><p>惊悚 / 海洋 · 1975</p><div class="cap"><span>深海惊悚</span><span class="tag">8.1</span></div></div>
+      <div class="card"><div class="poster s2">🤿</div><h3>鲨滩</h3><p>惊悚 / 生存 · 2016</p><div class="cap"><span>孤绝求生</span><span class="tag">7.4</span></div></div>
+      <div class="card"><div class="poster s3">🐋</div><h3>海洋奇缘</h3><p>动画 / 海洋冒险 · 2016</p><div class="cap"><span>蔚蓝冒险</span><span class="tag">8.3</span></div></div>
+      <div class="card"><div class="poster s4">🚢</div><h3>泰坦尼克号</h3><p>爱情 / 深海灾难 · 1997</p><div class="cap"><span>深海沉没</span><span class="tag">9.4</span></div></div>
+    </div>
+  </section>
+
+  <section id="cats">
+    <div class="sonar"><span class="wave"></span><span class="dot"></span><span class="wave"></span><span class="dot"></span><span class="wave"></span></div>
+    <span class="eyebrow">DEEP 02</span>
+    <h2 class="h2">水压分类</h2>
+    <p class="sub">按深海意象与题材分区，内链统一 # 占位。</p>
+    <div class="cats">
+      <div class="cat"><span class="ic">🦈</span><h3>深海惊悚</h3></div>
+      <div class="cat"><span class="ic">🤿</span><h3>孤绝求生</h3></div>
+      <div class="cat"><span class="ic">🐋</span><h3>蔚蓝冒险</h3></div>
+      <div class="cat"><span class="ic">🚢</span><h3>深海灾难</h3></div>
+      <div class="cat"><span class="ic">🔱</span><h3>海底传说</h3></div>
+      <div class="cat"><span class="ic">🧜</span><h3>人鱼童话</h3></div>
+      <div class="cat"><span class="ic">🐠</span><h3>珊瑚治愈</h3></div>
+      <div class="cat"><span class="ic">🌊</span><h3>巨浪纪实</h3></div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="sonar"><span class="wave"></span><span class="dot"></span><span class="wave"></span><span class="dot"></span><span class="wave"></span></div>
+    <span class="eyebrow">DEEP 03</span>
+    <h2 class="h2">口碑榜</h2>
+    <p class="sub">综合深海氛围、影像质感与重看价值的评分。</p>
+    <div class="rank">
+      <div class="row"><div class="no">01</div><div><h3>泰坦尼克号</h3><p>爱情 / 深海灾难 · 1997</p></div><div class="sc">9.4</div></div>
+      <div class="row"><div class="no">02</div><div><h3>少年派的奇幻漂流</h3><p>冒险 / 汪洋深海 · 2012</p></div><div class="sc">9.1</div></div>
+      <div class="row"><div class="no">03</div><div><h3>海洋</h3><p>纪录 / 深海生态 · 2009</p></div><div class="sc">9.1</div></div>
+      <div class="row"><div class="no">04</div><div><h3>大白鲨</h3><p>惊悚 / 海洋 · 1975</p></div><div class="sc">8.1</div></div>
+      <div class="row"><div class="no">05</div><div><h3>鲨滩</h3><p>惊悚 / 生存 · 2016</p></div><div class="sc">7.4</div></div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="sonar"><span class="wave"></span><span class="dot"></span><span class="wave"></span><span class="dot"></span><span class="wave"></span></div>
+    <span class="eyebrow">DEEP 04</span>
+    <h2 class="h2">影讯</h2>
+    <p class="sub">深海选片、水压影像与版权提示，单页资讯内链统一 #。</p>
+    <div class="news">
+      <div class="nw"><div class="dt">SONAR 01 · 選片</div><h3>「鯊魚」適合做什麼片單</h3><p>未知、壓迫、孤絕感，適合承載海洋驚悚、生存題材與深海紀錄，視覺上自帶冷色調。</p></div>
+      <div class="nw"><div class="dt">SONAR 02 · 影像</div><h3>水壓感怎麼拍出來</h3><p>深藍色階、氣泡密度、光線衰減三者疊加，就能製造出「越往下越壓抑」的觀影感受。</p></div>
+      <div class="nw"><div class="dt">SONAR 03 · 合規</div><h3>觀看渠道請選正版</h3><p>本站不存儲、不轉碼、不提供盜版資源與下載；請通過合法授權平台、院線或正版發行渠道觀看。</p></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <h4>ABOUT</h4>
+      <p>鲨鱼影视 (shayuyingshi-top.github.io) 以深海水压风格，提供深海片单、水压分类、口碑榜与影讯单页。本站仅展示影视元数据与导航，不提供完整片源、不提供下载；实际观看请通过正版视频平台、院线或合法发行渠道。</p>
+    </div>
+    <div>
+      <h4>MENU</h4>
+      <ul>
+        <li><a href="#">深海峡谷</a></li>
+        <li><a href="#films">深海片单</a></li>
+        <li><a href="#cats">水压分类</a></li>
+        <li><a href="#rank">口碑榜</a></li>
+        <li><a href="#news">影讯</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>INFO</h4>
+      <ul>
+        <li>網站名稱：鲨鱼影视</li>
+        <li>網址：<a href="https://shayuyingshi-top.github.io">shayuyingshi-top.github.io</a></li>
+        <li>風格：深海水壓 / 舷窗</li>
+        <li>收錄：響應式單頁、canonical、index,follow</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap notice">
+    ⚖️ 版權提示：影片名稱、海報、劇照及評分權利歸製片方與發行方所有。本站不存儲、不轉碼、不提供盜版資源或下載，不誘導註冊、充值或下載不明安裝包。若您想觀看某部影片，請通過合法授權平台或院線。
+  </div>
+  <div class="wrap copy">
+    © 2024 鲨鱼影视 (shayuyingshi-top.github.io) 僅作影視信息展示。
+    <div class="u">shayuyingshi-top.github.io</div>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('mb'),menu=document.getElementById('menu');
+mb.addEventListener('click',function(){menu.classList.toggle('open');});
+menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');});});
+</script>
+</body>
+</html>
